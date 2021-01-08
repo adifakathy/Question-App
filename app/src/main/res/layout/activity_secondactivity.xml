@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Secondactivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" How to kill an activity in Android?"
+        android:textSize="30dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/radiogroup2Id">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A-finish()"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B-finish Activity(int requestCode)"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            tools:ignore="InvalidId" />
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C- A and B"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kill()"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            tools:ignore="InvalidId" />
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/submitid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="30dp"
+        android:onClick="submitbuttonfuntion"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
